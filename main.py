@@ -1,53 +1,50 @@
-# lesson 1 = python variable
-# Variable = A container for a value (string, integer, float, boolean)
-#            A variable behaves as if it was the value it contains
+# Lesson 2 (Typecasting)
 
-# Strings
-first_name = "Akmal"
-food = "fried rice"
-email = "akmalrizk2508@gmail.com"
+# typecasting = the process of converting a value of one data type to another data type (string to integer, integer to float, float to boolean, etc)
+# Explicit vs Implicit
 
-# print(f"Hello {first_name}") # f-string
-# print(f"You like {food}")
-# print(f"Your email is: {email}")
+# name = "Akmal Rizky Fauzan"
+# age = 25
+# gpa = 3.02
+# student = False
 
-# Integers
-age = 25
-quantity = 3
-num_of_student = 30
+# print(type(name)) --> to know the data type of the variable
+# print(type(age))
+# print(type(gpa))
+# print(type(student))
 
-# print(f"You are {age} years old")
-# print(f"You are buying {quantity} items")
-# print(f"Your class has {num_of_student} students")
+# Explicit
+# Integer to Float
+# age = float(age)
+# print(type(age))
 
-# Float
-price = 10.99
-gpa = 3.02
-distance = 5.5
+# Float to Integer
+# gpa = int(gpa)
+# print(type(gpa))
 
-# print(f"The price is ${price}")
-# print(f"Your GPA is: {gpa}")
-# print(f"You ran {distance}km")
+# Boolean to String
+# student = str(student)
+# print(type(student))
 
-# Boolean
+# Integer to Boolean
+# age = bool(age)
+# print(age) 
+# When print the age, it will be True because there are numbers but not ZERO
+# If the number is ZERO, it will be False
+# print(type(age))
 
-is_student = False
-for_sale = False
-is_online = False
+# String to Boolean
+# name = bool(name)
+# print(name) 
+# When print the name, it will be True because there are characters but not EMPTY
+# If there an EMPTY string, it will be False
+# print(type(name))
 
-# print(f"Are you a student?: {is_student}")
+# Implicit
+x = 2
+y = 2.0
 
-# if is_student:
-#     print("You are a student")
-# else:
-#     print("You are NOT a student")
+x = x/y
 
-# if for_sale:
-#     print("That item is for sale")
-# else:
-#     print("That item is NOT available")
-
-if is_online:
-    print("You are online")
-else:
-    print("You are offline")
+print(x)
+# X will become a float because the math operation makes X (integer) turns to like Y (float) data type.

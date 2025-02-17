@@ -1,46 +1,53 @@
-# Lesson 4 (Arithmetic and Math)
+# Lesson 5 (If, Elif, Else Statements)
 
-# Arithmetic
-friends = 10
+# if = Do some code only IF some conditions is True
+#      Else do something else
 
-# friends = friends + 1
-# friends += 1 # this is known as Augmented Assignment Operators
-# friends = friends - 2
-# friends -= 2
-# friends = friends * 3
-# friends *= 3
-# friends = friends / 2
-# friends /= 2
-# friends = friends ** 2
-# friends **= 2
-# remainder = friends % 3
+# Example 1 (please remove the comment on code below to see the result)
 
-# print(friends)
+# age = int(input("Enter your age: "))
 
-# Some built in function about numbers
-x = 3.14
-y = -4
-z = 5
+# if age >= 18 and age <= 60:
+#     print("You are signed up!")
+# elif age < 0:
+#     print("You haven't been born yet!")
+# elif age >= 61:
+#     print("You are too old to sign up!")
+# else:
+#     print("You must be 18+ to sign up!")
 
-# result = round(x)
-# result = abs(y)
-# result = pow(z, 2)
-# result = max(x, y, z)
-# result = min(x, y, z)
+# Example 2 (please remove the comment on code below to see the result)
 
-# print(result)
+# response = input("Would you like some food? (Y/N): ")
 
-# Math
-import math
+# if response == "Y":
+#     print("Have some food here!")
+# else:
+#     print("No food for you!")
 
-a = 9
-b = 9.1
-c = 9.9
+# Example 3 (please remove the comment on code below to see the result)
 
-# print(math.pi)
-# print(math.e)
-# result = math.sqrt(a)
-# result = math.ceil(b)
-# result = math.floor(c)
+# name = input("Enter your name: ")
 
-# print(result)
+# if name == "":
+#     print("You did not type in your name!")
+# else:
+#     print(f"Hello {name}!")
+
+# Example 4 (please remove the comment on code below to see the result)
+
+# for_sale = False
+
+# if for_sale:
+#     print("This item is for sale")
+# else:
+#     print("This items is NOT for sale")
+
+# Example 5 (please remove the comment on code below to see the result)
+
+online = False
+
+if online:
+    print("The user is online")
+else:
+    print("The user is offline")

@@ -1,32 +1,34 @@
-# Lesson 6 (Logical Operators)
+# Lesson 7 (Conditional Expression)
 
-# logical operators = used on conditional statements
+# conditional expression = A one-line shortcut for the if-else (ternary operators)
+# Print or assign one of the values based on condition
+# Formula = X if condition else Y
 
-# and = check two or more conditions if True
-#  or = checks if at least one condition is True
-# not = True if condition is False, and vice versa
+# Example
 
-# Example 1 (and)
+num1 = -5
+num2 = 5
+a = 6
+b = 7
+age = 13
+temperature = 0
+user_role = "guest"
 
-temp = 40
+# print("Positive" if num1 > 0 else "Negative")
 
-# if temp > 0 and temp < 30:
-#     print("The temperature is good")
-# else:
-#     print("The temperature is bad")
+# print("EVEN" if num2 % 2 == 0 else "ODD")
 
-# Example 2 (or)
+# max_num = a if a > b else b
+# print(max_num)
 
-if temp <= 0 or temp >= 30:
-    print("The temperature is bad")
-else:
-    print("The temperature is good")
+# min_num = a if a < b else b
+# print(min_num)
 
-# Example 3 (not)
+# status = "Adult" if age >= 18 else "Child"
+# print(status)
 
-sunny = True
+# weather = "HOT" if temperature > 20 else "COLD"
+# print(weather)
 
-if  not sunny:
-    print("It is cloudy outside")
-else:
-    print("It is sunny outside")
+access_level = "Full Access" if user_role == "admin" else "Limited Access"
+print(access_level)

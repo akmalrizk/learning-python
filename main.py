@@ -1,53 +1,32 @@
-# Lesson 5 (If, Elif, Else Statements)
+# Lesson 6 (Logical Operators)
 
-# if = Do some code only IF some conditions is True
-#      Else do something else
+# logical operators = used on conditional statements
 
-# Example 1 (please remove the comment on code below to see the result)
+# and = check two or more conditions if True
+#  or = checks if at least one condition is True
+# not = True if condition is False, and vice versa
 
-# age = int(input("Enter your age: "))
+# Example 1 (and)
 
-# if age >= 18 and age <= 60:
-#     print("You are signed up!")
-# elif age < 0:
-#     print("You haven't been born yet!")
-# elif age >= 61:
-#     print("You are too old to sign up!")
+temp = 40
+
+# if temp > 0 and temp < 30:
+#     print("The temperature is good")
 # else:
-#     print("You must be 18+ to sign up!")
+#     print("The temperature is bad")
 
-# Example 2 (please remove the comment on code below to see the result)
+# Example 2 (or)
 
-# response = input("Would you like some food? (Y/N): ")
-
-# if response == "Y":
-#     print("Have some food here!")
-# else:
-#     print("No food for you!")
-
-# Example 3 (please remove the comment on code below to see the result)
-
-# name = input("Enter your name: ")
-
-# if name == "":
-#     print("You did not type in your name!")
-# else:
-#     print(f"Hello {name}!")
-
-# Example 4 (please remove the comment on code below to see the result)
-
-# for_sale = False
-
-# if for_sale:
-#     print("This item is for sale")
-# else:
-#     print("This items is NOT for sale")
-
-# Example 5 (please remove the comment on code below to see the result)
-
-online = False
-
-if online:
-    print("The user is online")
+if temp <= 0 or temp >= 30:
+    print("The temperature is bad")
 else:
-    print("The user is offline")
+    print("The temperature is good")
+
+# Example 3 (not)
+
+sunny = True
+
+if  not sunny:
+    print("It is cloudy outside")
+else:
+    print("It is sunny outside")

@@ -1,48 +1,23 @@
-# Lesson 8 (Useful String Method)
+# Lesson 9 (String Indexing)
 
-# name = input("Enter your full name: ")
-# phone_number = input("Enter your phone number: ")
+# indexing = accessing elements of a sequence using [] (indexing operator)
+#            [start : end : step]
 
-# result = len(name) 
-# len() --> to count the characters
-# result = name.find("o")
-# find() --> to find a character (first) within a string (name)
-# result = name.rfind("o")
-# rfind() --> to find a character (last) within a string (name)
-# name = name.capitalize()
-# capitalize() --> to capitalize the first letter of the string
-# name = name.upper()
-# upper() --> to upper case the string
-# name = name.lower()
-# lower() --> to lower case the string
-# result = name.isdigit()
-# isdigit() --> to see if there are ONLY numbers (boolean)
-# result = name.isalpha()
-# isdigit() --> to see if there are ONLY alphabet (boolean)
-# result = phone_number.count("-")
-# count() --> to count how many a character in a string
-# phone_number = phone_number.replace("-", "")
-# replace() --> to replace a character with a character within a string
+credit_number = "1234-5678-9012-3456"
 
-# print(help(str))
-# print the guide of all string method
+# print(credit_number[0]) --> the first digit (0)
+# print(credit_number[:4]) --> the first 4 digits
+# print(credit_number[5:9]) --> the second 4 digits
+# print(credit_number[5:]) --> print everything except the first 4 digits
+# print(credit_number[-1]) --> the last digits (-1)
+# print(credit_number[::2]) --> print every 2 characters
 
-# print(phone_number)
+# Exercise 1 (get the last 4 digits)
 
-# Example
+# last_digits = credit_number[-4:]
+# print(f"XXXX-XXXX-XXXX-{last_digits}")
 
-# Validate user input exercise
-# 1. username is no more than 12 characters
-# 2. username must not contain spaces
-# 3. username must not contain digits
+# Exercise 2 (credit number backwards)
 
-username = input("Enter your username: ")
-
-if len(username) > 12:
-    print("Your username can not be more than 12 characters")
-elif not username.find(" ") == -1:
-    print("Your username can not contain space(s)")
-elif username.isalpha():
-    print("Your username can not contain number(s)")
-else:
-    print(f"Welcome {username}!")
+credit_number = credit_number[::-1]
+print(credit_number)

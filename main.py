@@ -1,34 +1,48 @@
-# Lesson 7 (Conditional Expression)
+# Lesson 8 (Useful String Method)
 
-# conditional expression = A one-line shortcut for the if-else (ternary operators)
-# Print or assign one of the values based on condition
-# Formula = X if condition else Y
+# name = input("Enter your full name: ")
+# phone_number = input("Enter your phone number: ")
+
+# result = len(name) 
+# len() --> to count the characters
+# result = name.find("o")
+# find() --> to find a character (first) within a string (name)
+# result = name.rfind("o")
+# rfind() --> to find a character (last) within a string (name)
+# name = name.capitalize()
+# capitalize() --> to capitalize the first letter of the string
+# name = name.upper()
+# upper() --> to upper case the string
+# name = name.lower()
+# lower() --> to lower case the string
+# result = name.isdigit()
+# isdigit() --> to see if there are ONLY numbers (boolean)
+# result = name.isalpha()
+# isdigit() --> to see if there are ONLY alphabet (boolean)
+# result = phone_number.count("-")
+# count() --> to count how many a character in a string
+# phone_number = phone_number.replace("-", "")
+# replace() --> to replace a character with a character within a string
+
+# print(help(str))
+# print the guide of all string method
+
+# print(phone_number)
 
 # Example
 
-num1 = -5
-num2 = 5
-a = 6
-b = 7
-age = 13
-temperature = 0
-user_role = "guest"
+# Validate user input exercise
+# 1. username is no more than 12 characters
+# 2. username must not contain spaces
+# 3. username must not contain digits
 
-# print("Positive" if num1 > 0 else "Negative")
+username = input("Enter your username: ")
 
-# print("EVEN" if num2 % 2 == 0 else "ODD")
-
-# max_num = a if a > b else b
-# print(max_num)
-
-# min_num = a if a < b else b
-# print(min_num)
-
-# status = "Adult" if age >= 18 else "Child"
-# print(status)
-
-# weather = "HOT" if temperature > 20 else "COLD"
-# print(weather)
-
-access_level = "Full Access" if user_role == "admin" else "Limited Access"
-print(access_level)
+if len(username) > 12:
+    print("Your username can not be more than 12 characters")
+elif not username.find(" ") == -1:
+    print("Your username can not contain space(s)")
+elif username.isalpha():
+    print("Your username can not contain number(s)")
+else:
+    print(f"Welcome {username}!")
